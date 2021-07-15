@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Birthday</title>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header>
+      <h1>Krishna Eye Care</h1>
+      <marquee behavior="aleternate">
+        Address: Khodai Mata Rd, In front of DR highschool, Lokmanya Colony,
+        Nehru Nagar, Nandurbar, Maharashtra 425412</marquee
+      >
+    </header>
+    <div class="pic">
+      <div class="w3-content w3-section" style="max-width: 300px">
+        <img class="mySlides" src="ina.jpg" style="width: 100%" />
+        <img class="mySlides" src="eye.png" style="width: 100%" />
+        <img class="mySlides" src="degree.jpg" style="width: 100%" />
+      </div>
+      <div class="w3-content w3-sectio" style="max-width: 300px">
+        <img class="mySlides2" src="cabin.jpg" style="width: 100%" />
+        <img class="mySlides2" src="table.jpg" style="width: 100%" />
+        <img class="mySlides2" src="bed.jpg" style="width: 100%" />
+      </div>
+    </div>
+    <!-- <img src="three.jpg" alt="" /> -->
+    <!-- <script src="" async defer></script> -->
+    <script>
+      var myIndex = 0;
+      carousel();
+      carousel1();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      function carousel1() {
+        var i;
+        var x = document.getElementsByClassName("mySlides2");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel1, 3500); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
